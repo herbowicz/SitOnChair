@@ -14,7 +14,7 @@
 
 .container{
     width:88%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -177,7 +177,7 @@ main > .container {
     position: relative;
 }
 
-.gallery-text h1{
+.gallery-text h2{
     margin-bottom: 30px;
 }
 .gallery-text p{
@@ -199,7 +199,7 @@ main > .container {
 /*     PRICE LIST    */
 
 .price-list{
-    height: 800px;
+    height: 740px;
     width: 100%;
     background-color: #e7e7e7;
     padding: 60px 0;
@@ -210,6 +210,9 @@ main > .container {
     height: 800px;
 }
 
+.price-list .title{
+    width: 100%;
+}
 .price-list h1{
     font-size: 26px;
     color: #5C5C5C;
@@ -218,7 +221,7 @@ main > .container {
 
 .big-line{
     height: 10px;
-    width: 25%;
+    width: 26%;
     background-color: #2eb9a0;
     position: absolute;
     top: 93px;
@@ -227,10 +230,173 @@ main > .container {
 
 .price-board{
     height: 600px;
-    width: 26%;
+    width: 30%;
     background-color: #f4f4f4;
     position: relative;
+    border: 3px solid lightgray;
+    margin-top: 85px;
+    border-radius: 4px;
 }
+
+.top-circle{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: -7.6%;
+    left: 41.29%;
+}
+
+.inner-circle{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: auto;
+    background-color: lightgray;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.price-board > p{ /* ???*/
+    color: #2eb9a0;
+    font-size: 28px;
+    text-align: center;
+    margin: 36px 0;
+}
+
+.price{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid lightgray;
+    position: absolute;
+    left: 30.68%;
+    color: lightgray;
+}
+
+.price > .num1{
+    position: absolute;
+    top: 19%;
+    left: 25.5%;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.price > .num2{
+    position: absolute;
+    right: 20%;
+    top: 21%;
+    font-weight: 700;
+}
+
+.price > .peroid{
+    position: absolute;
+    bottom: 17%;
+    left: 18.33%;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.offer{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    background-color: #e7e7e7;
+    color: gray;
+}
+
+.offer li{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.offer li:nth-child(2n+1){
+    background-color: lightgray;
+}
+
+.lil-btn{
+    width: 140px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #2eb9a0;
+    position: absolute;
+    bottom: 25px;
+    left: 32.53%;
+    border: 2px solid #2eb9a0;
+}
+
+.lil-btn > span{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    position: absolute;
+    left: 23%;
+}
+
+/*    SECOND PRICE BOARD    */
+
+.price-board:nth-of-type(3){
+    margin: 86px 4.462%;
+    background-color: #2eb9a0;
+    border: 3px solid #2eb9a0;
+}
+
+.price-board:nth-of-type(3) > p{
+    color: white;
+}
+
+.price-board:nth-of-type(3) > .top-circle{
+    background-color: #2eb9a0;
+    border: 3px solid #2eb9a0;
+}
+
+.price-board:nth-of-type(3) .inner-circle{
+    background-color: white;
+}
+
+.price-board:nth-of-type(3) .lil-btn,
+.price-board:nth-of-type(3) .price{
+    background-color: white;
+    border: 2px solid white;
+}
+
+.price-board:nth-of-type(3) .lil-btn > span{
+    color: #2eb9a0;
+    font-weight: 700;
+}
+.price-board:nth-of-type(3) .num1,
+.price-board:nth-of-type(3) .num2,
+.price-board:nth-of-type(3) .peroid{
+    color:#2eb9a0;
+}
+
+.price-board:nth-of-type(3) .num2{
+    top: 23.5%;
+}
+
+.price-board:nth-of-type(3) .offer{
+    background-color: lightgray;
+}
+
+.price-board:nth-of-type(3) .offer li:nth-child(2n+1){
+    background-color: #e7e7e7;
+}
+
+/*    THIRD PRICE BOARD    */
+.price-board:last-of-type .num1{
+    left: 20%;
+}
+
+.price-board:last-of-type .num2{
+    top: 23%;
+}
+
 
 /*    CONTACT    */
 
