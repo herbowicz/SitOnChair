@@ -68,25 +68,27 @@ header span>span{
     position: relative;
 }
 .nav-item{
-    display:inline-block;
+    display: inline-block;
+    letter-spacing: 2px;
 }
 
 .nav-item:nth-child(2){
-    margin: 0 25px;
+    margin: 0 35px;
 }
 
 .nav-list{
     display: none;
     background-color: black;
     position: absolute;
-    top: 65px;
-    right: 150px;
+    margin-top: 25px;
+    right: 200px;
 }
 
 .nav-item-list{
     display: block;
-    width: 150px;
-    height: 30px;
+    width: 120px;
+    height: 20px;
+    padding: 10px 15px;
 }
 
 .nav-item:hover .nav-list{
@@ -117,7 +119,8 @@ main > .container {
     height: 630px;
 }
 
-/*GALLERY*/
+/* GALLERY */
+
 .gallery{
     height: 400px;
     width: 100%;
@@ -133,12 +136,12 @@ main > .container {
 }
 
 .small-box:nth-child(2){
-    margin: 0px 34px;
+    margin: 0px 2.581%;
     background-image: url("../images/box2_img.jpg");
 }
 
 .stripe{
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.35);
     position: absolute;
     width: 100%;
     height: 29%;
@@ -186,4 +189,79 @@ main > .container {
 .gallery-text > .line{
     top: 60px;
     left: 13px;
+}
+
+.gallery::after{
+    content: " ";
+    clear: both;
+}
+
+/*     PRICE LIST    */
+
+.price-list{
+    height: 800px;
+    width: 100%;
+    background-color: #e7e7e7;
+    padding: 60px 0;
+    position: relative;
+}
+
+.price-list > .container{
+    height: 800px;
+}
+
+.price-list h1{
+    font-size: 26px;
+    color: #5C5C5C;
+    letter-spacing: 0.5px;
+}
+
+.big-line{
+    height: 10px;
+    width: 25%;
+    background-color: #2eb9a0;
+    position: absolute;
+    top: 93px;
+    left: 91px;
+}
+
+.price-board{
+    height: 600px;
+    width: 26%;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/*    CONTACT    */
+
+.contact{
+    height: 600px;
+    width: 100%;
+    padding: 50px 0;
+    position: relative;
+}
+
+.contact > .container{
+    height: 600px;
+}
+
+.contact h1{
+    font-size: 26px;
+    color: #5C5C5C;
+    letter-spacing: 0.5px;
+}
+
+.contact .big-line{
+    top: 82px;
+}
+
+/*    FOOTER    */
+
+footer{
+    height: 130px;
+    width: 100%;
+}
+
+footer > .container{
+    padding: 55px 0;
 }
