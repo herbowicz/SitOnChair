@@ -60,7 +60,7 @@
 }
 
 .container{
-    width: 1500px;
+    width: 1340px;
     border: 1px solid red;
     margin: 0 auto;
     box-sizing: border-box;
@@ -95,16 +95,15 @@ header > .container{
 .logo{
     padding: 20px 0;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: ralewaymedium;
     letter-spacing: 2px;
 }
 
 header span>span{
     color: #2eb9a0;
-    font-size: 20px;
+    font-size: 18px;
     font-family: ralewayextrabold;
-    font-weight: 900;
 }
 
 /*MENU*/
@@ -120,12 +119,12 @@ header span>span{
 }
 
 .nav-item a{
-    font-size: 20px;
+    font-size: 18px;
     font-family: ralewaysemibold;
 }
 
 .nav-item:nth-child(2){
-    margin: 0 50px 0 65px;
+    margin: 0 45px 0 55px;
 }
 
 .nav-list{
@@ -156,30 +155,21 @@ header span>span{
 /* CONTENT */
 
 main{
-    height: 700px;
+    height: 630px;
     width: 100%;
     background-image: url("../slider.jpg");
     background-position: center;
     background-size: cover;
-
-    /*background: rgba(252,252,252,0.3);
-    background: -moz-linear-gradient(top, rgba(252,252,252,0.61) 0%, rgba(201,201,201,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,252,252,0.61)), color-stop(100%, rgba(201,201,201,1)));
-    background: -webkit-linear-gradient(top, rgba(252,252,252,0.61) 0%, rgba(201,201,201,1) 100%);
-    background: -o-linear-gradient(top, rgba(252,252,252,0.61) 0%, rgba(201,201,201,1) 100%);
-    background: -ms-linear-gradient(top, rgba(252,252,252,0.61) 0%, rgba(201,201,201,1) 100%);
-    background: linear-gradient(to bottom, rgba(252,252,252,0.61) 0%, rgba(201,201,201,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#c9c9c9', GradientType=0 );*/
 }
 
 main > .container {
-    height: 700px;
+    height: 630px;
 }
 
 /* GALLERY */
 
 .gallery{
-    height: 415px;
+    height: 390px;
     width: 100%;
     padding: 40px 0;
 }
@@ -189,8 +179,8 @@ main > .container {
 }
 
 .small-box{
-    width:470px;
-    height: 320px;
+    width:420px;
+    height: 300px;
     border: 1px solid #c2c2c2;
     border-radius: 2px;
     background-image: url("../images/box1_img.jpg");
@@ -200,32 +190,31 @@ main > .container {
 }
 
 .small-box:nth-child(2){
-    margin: 0px 41.2px;
+    margin: 0px 36.6px;
     background-image: url("../images/box2_img.jpg");
 }
 
 .small-box:nth-child(3){
     font-family: raleway;
     background-image: none;
-    padding: 35px 30px;
-    width: 410px;
+    padding: 38px 30px;
+    width: 360px;
     height: auto;
-
 }
 
 .stripe{
     background-color: rgba(255,255,255,0.4);
     position: absolute;
     width: 100%;
-    height: 90px;
+    height: 85px;
     bottom: 18px;
 }
 
 .small-box h2{
     position: relative;
-    top: 17px;
-    left: 20px;
-    font-size: 23px;
+    top: 18px;
+    left: 19px;
+    font-size: 21px;
     font-family: ralewaybold;
 }
 
@@ -237,24 +226,24 @@ main > .container {
 
 article p{
     margin: 25px 0;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 26px;
+    font-size: 18px;
     color: gray;
     font-family: raleway;
 }
 
 .line{
     position: absolute;
-    top: 50%;
+    top: 44px;
     height: 10px;
-    width: 200px;
+    width: 180px;
     background-color: #28c7aa;
     margin-left: 18px;
 }
 
 article > .line{
     position: absolute;
-    top: 64px;
+    top: 66px;
     left: 12px;
 }
 
@@ -268,52 +257,52 @@ article > .line{
 .price-list{
     height: 850px;
     width: 100%;
-    background-color: #e7e7e7;
+    background-color: #f1f1f1;
     padding: 60px 0;
     position: relative;
 }
 
 .price-list > .container{
-    height: 800px;
+    height: 850px;
 }
 
-.price-list .title{
+.title{
     width: 100%;
-}
-.price-list h1{
-    font-size: 26px;
+    font-size: 20px;
     color: #5C5C5C;
     letter-spacing: 0.5px;
+    font-family: raleway;
+    position: relative;
 }
 
 .big-line{
     height: 10px;
-    width: 26%;
+    width: 410px;
     background-color: #2eb9a0;
     position: absolute;
-    top: 93px;
-    left: 91px;
+    top: 45px;
 }
 
 .price-board{
-    height: 600px;
-    width: 30%;
-    background-color: #f4f4f4;
+    height: 660px;
+    width: 416px;
+    background-color: #f9f9f9;
     position: relative;
-    border: 3px solid #c2c2c2;
-    margin-top: 85px;
+    border: 3px solid #d5d5d5;
+    margin-top: 125px;
     border-radius: 4px;
+    font-family: raleway;
 }
 
 .top-circle{
-    height: 65px;
-    width: 65px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    border: 3px solid #c2c2c2;
-    background-color: #f4f4f4;
+    border: 3px solid #d5d5d5;
+    background-color: #f9f9f9;
     position: absolute;
-    top: -7.6%;
-    left: 41.29%;
+    top: -52px;
+    left: 170.6px;
 }
 
 .inner-circle{
@@ -327,52 +316,55 @@ article > .line{
     left: 25%;
 }
 
-.price-board > p{ /* ???*/
-    color: #2eb9a0;
-    font-size: 28px;
+.price-board > p{ /* TO NIE JEST TA CZCIONKA!*/
+    color: #27c7ab;
+    font-size: 34px;
     text-align: center;
-    margin: 36px 0;
+    margin: 35px 0 30px 0;
+    letter-spacing: -1.5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .price{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     background-color: white;
-    border: 3px solid lightgray;
+    border: 3px solid #d5d5d5;
     position: absolute;
-    left: 30.68%;
-    color: lightgray;
+    left: 120.6px;
+    color: #c2c2c2;
+    font-family: ralewaybold;
 }
 
 .price > .num1{
     position: absolute;
-    top: 19%;
-    left: 25.5%;
-    font-size: 55px;
-    font-weight: 900;
+    top: 35px;
+    left: 41px;
+    font-size: 62px;
+
 }
 
 .price > .num2{
     position: absolute;
-    right: 20%;
-    top: 21%;
-    font-weight: 700;
+    right: 35px;
+    top: 40px;
+    font-size: 20px;
 }
 
 .price > .peroid{
     position: absolute;
-    bottom: 17%;
+    bottom: 20%;
     left: 18.33%;
-    font-weight: 900;
-    font-size: 20px;
+    font-family: ralewaysemibold;
+    font-size: 22px;
 }
 
 .offer{
     width: 100%;
     position: absolute;
-    top: 50%;
-    background-color: #e7e7e7;
+    top: 340px;
+    background-color: #f1f1f1;
     color: gray;
 }
 
@@ -380,90 +372,78 @@ article > .line{
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .offer li:nth-child(2n+1){
-    background-color: #c2c2c2;
+    background-color: #e4e4e4;
 }
 
 .lil-btn{
-    width: 140px;
-    height: 32px;
-    border-radius: 8px;
-    background-color: #2eb9a0;
+    width: 155px;
+    height: 42px;
+    border-radius: 10px;
     position: absolute;
     bottom: 25px;
-    left: 32.53%;
-    border: 2px solid #2eb9a0;
+    left: 128.9px;
+    background-color: #27c7ab;
+    border: 2px solid #27c7ab;
 }
 
 .lil-btn > span{
     text-decoration: none;
+    font-size: 20px;
+    font-family: raleway;
     color: white;
-    padding: 6px;
+    padding: 8px;
     position: absolute;
-    left: 23%;
+    left: 29px;
 }
 
 /*    SECOND PRICE BOARD    */
 
 .price-board:nth-of-type(3){
-    margin: 86px 4.462%;
-    background-color: #2eb9a0;
-    border: 3px solid #2eb9a0;
-}
-
-.price-board:nth-of-type(3) > p{
-    color: white;
+    margin: 125px 38px;
+    background-color: #27c7ab;
+    border: 3px solid #27c7ab;
 }
 
 .price-board:nth-of-type(3) > .top-circle{
-    background-color: #2eb9a0;
-    border: 3px solid #2eb9a0;
+    background-color: #27c7ab;
+    border: 3px solid #27c7ab;
 }
 
 .price-board:nth-of-type(3) .inner-circle{
     background-color: white;
 }
 
+.price-board:nth-of-type(3) > p{
+    color: white;
+}
+
 .price-board:nth-of-type(3) .lil-btn,
 .price-board:nth-of-type(3) .price{
     background-color: white;
     border: 2px solid white;
+    color:#27c7ab;
 }
 
 .price-board:nth-of-type(3) .lil-btn > span{
-    color: #2eb9a0;
-    font-weight: 700;
-}
-.price-board:nth-of-type(3) .num1,
-.price-board:nth-of-type(3) .num2,
-.price-board:nth-of-type(3) .peroid{
-    color:#2eb9a0;
+    color: #27c7ab;
+    font-family: ralewaysemibold;
 }
 
-.price-board:nth-of-type(3) .num2{
-    top: 23.5%;
+.price-board:nth-of-type(3) .offer li:nth-child(2n){
+    background-color: #f1f1f1;
 }
-
-.price-board:nth-of-type(3) .offer{
-    background-color: lightgray;
-}
-
 .price-board:nth-of-type(3) .offer li:nth-child(2n+1){
-    background-color: #e7e7e7;
+    background-color: #ffffff;
 }
 
 /*    THIRD PRICE BOARD    */
 .price-board:last-of-type .num1{
-    left: 20%;
+    left: 20px;
 }
-
-.price-board:last-of-type .num2{
-    top: 23%;
-}
-
 
 /*    CONTACT    */
 
