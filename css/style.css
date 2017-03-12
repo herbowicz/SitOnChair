@@ -79,7 +79,31 @@
     float: right;
 }
 
-/*HEADER + NAVIGATION*/
+section::after{
+    content: " ";
+    clear: both;
+}
+
+/*    SECTIONS TITLE   */
+
+.title{
+    width: 100%;
+    font-size: 19px;
+    color: #5C5C5C;
+    letter-spacing: 0.5px;
+    font-family: raleway, sans-serif;
+    position: relative;
+}
+
+.big-line{
+    height: 10px;
+    width: 410px;
+    background-color: #2eb9a0;
+    position: absolute;
+    top: 41px;
+}
+
+/*HEADER + LOGO*/
 
 header{
     width: 100%;
@@ -96,17 +120,17 @@ header > .container{
     padding: 20px 0;
     color: white;
     font-size: 18px;
-    font-family: ralewaymedium;
+    font-family: ralewaymedium, sans-serif;
     letter-spacing: 2px;
 }
 
 header span>span{
     color: #2eb9a0;
     font-size: 18px;
-    font-family: ralewayextrabold;
+    font-family: ralewayextrabold, sans-serif;
 }
 
-/*MENU*/
+/*MENU - NAVIGATION*/
 
 .nav{
     padding: 20px 0;
@@ -120,7 +144,7 @@ header span>span{
 
 .nav-item a{
     font-size: 18px;
-    font-family: ralewaysemibold;
+    font-family: ralewaysemibold, sans-serif;
 }
 
 .nav-item:nth-child(2){
@@ -133,7 +157,6 @@ header span>span{
     position: absolute;
     margin-top: 25px;
     right: 200px;
-
 }
 
 .nav-item-list{
@@ -147,17 +170,12 @@ header span>span{
     display: block;
 }
 
-.nav::after{
-    content: " ";
-    clear: both;
-}
-
 /* CONTENT */
 
 main{
     height: 630px;
     width: 100%;
-    background-image: url("../slider.jpg");
+    background-image: url("../images/gradient.png");
     background-position: center;
     background-size: cover;
 }
@@ -182,7 +200,6 @@ main > .container {
     width:420px;
     height: 300px;
     border: 1px solid #c2c2c2;
-    border-radius: 2px;
     background-image: url("../images/box1_img.jpg");
     background-size: cover;
     position: relative;
@@ -195,7 +212,7 @@ main > .container {
 }
 
 .small-box:nth-child(3){
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     background-image: none;
     padding: 38px 30px;
     width: 360px;
@@ -215,7 +232,7 @@ main > .container {
     top: 18px;
     left: 19px;
     font-size: 21px;
-    font-family: ralewaybold;
+    font-family: ralewaybold, sans-serif;
 }
 
 .small-box:nth-child(3) > h2 {
@@ -229,7 +246,6 @@ article p{
     line-height: 26px;
     font-size: 18px;
     color: gray;
-    font-family: raleway;
 }
 
 .line{
@@ -247,11 +263,6 @@ article > .line{
     left: 12px;
 }
 
-section::after{
-    content: " ";
-    clear: both;
-}
-
 /*     PRICE LIST    */
 
 .price-list{
@@ -266,23 +277,6 @@ section::after{
     height: 850px;
 }
 
-.title{
-    width: 100%;
-    font-size: 19px;
-    color: #5C5C5C;
-    letter-spacing: 0.5px;
-    font-family: raleway;
-    position: relative;
-}
-
-.big-line{
-    height: 10px;
-    width: 410px;
-    background-color: #2eb9a0;
-    position: absolute;
-    top: 41px;
-}
-
 .price-board{
     height: 660px;
     width: 416px;
@@ -291,7 +285,7 @@ section::after{
     border: 3px solid #d5d5d5;
     margin-top: 125px;
     border-radius: 4px;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
 }
 
 .top-circle{
@@ -316,13 +310,13 @@ section::after{
     left: 25%;
 }
 
-.price-board > p{ /* TO NIE JEST TA CZCIONKA!*/
+.price-board > p{
     color: #27c7ab;
     font-size: 34px;
     text-align: center;
     margin: 35px 0 30px 0;
     letter-spacing: -1.5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* INNA CZCIONKA! */
 }
 
 .price{
@@ -334,7 +328,7 @@ section::after{
     position: absolute;
     left: 120.6px;
     color: #c2c2c2;
-    font-family: ralewaybold;
+    font-family: ralewaybold, sans-serif;
 }
 
 .price > .num1{
@@ -356,7 +350,7 @@ section::after{
     position: absolute;
     bottom: 20%;
     left: 18.33%;
-    font-family: ralewaysemibold;
+    font-family: ralewaysemibold, sans-serif;
     font-size: 22px;
 }
 
@@ -391,10 +385,7 @@ section::after{
 }
 
 .lil-btn > span{
-    text-decoration: none;
     font-size: 20px;
-    font-family: raleway;
-    color: white;
     padding: 8px;
     position: absolute;
     left: 29px;
@@ -435,7 +426,7 @@ section::after{
 
 .active .lil-btn > span{
     color: #27c7ab;
-    font-family: ralewaysemibold;
+    font-family: ralewaysemibold, sans-serif;
 }
 
 .active .offer{
@@ -465,7 +456,7 @@ form{
 
 input{
     font-size: 40px;
-    font-family: ralewaylight;
+    font-family: ralewaylight, sans-serif;
     display: block;
     width: 782px;
     height: 20px;
@@ -481,7 +472,7 @@ textarea{
     border: 2px solid #a1e6d1;
     padding: 30px 18px;
     font-size: 40px;
-    font-family: ralewaylight;
+    font-family: ralewaylight, sans-serif;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
@@ -497,7 +488,7 @@ input[type="button"]{
     right: -500px;
     bottom: -35px;
     font-size: 45px;
-    font-family: ralewaybold;
+    font-family: ralewaybold, sans-serif;
     color: white;
     cursor: pointer;
     padding: 18px
@@ -533,7 +524,7 @@ input[type="button"]{
     width: 340px;
     height: auto;
     padding: 5px 0 5px 15px;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
     font-size: 24px;
     color: #d7d7d7;
     line-height: -0.3px;
@@ -549,7 +540,7 @@ input[type="button"]{
 footer{
     height: 100px;
     width: 100%;
-    font-family: ralewaymedium;
+    font-family: ralewaymedium, sans-serif;
     color: #999999;
     font-size: 21px;
     letter-spacing: 0.5px;
@@ -574,11 +565,11 @@ footer li{
 footer .logo{
     color: #999999;
     font-size: 26px;
-    font-size: ralewaybold;
+    font-size: ralewaybold, sans-serif;
     transform: translateY(-13px);
     letter-spacing: 0.5px;
 }
 
 footer span>span{
-    font-family: ralewayextrabold;
+    font-family: ralewayextrabold, sans-serif;
 }
