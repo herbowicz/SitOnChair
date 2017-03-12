@@ -142,32 +142,56 @@ header span>span{
     letter-spacing: 2px;
 }
 
-.nav-item a{
+.nav-item > a{
     font-size: 18px;
     font-family: ralewaysemibold, sans-serif;
 }
 
 .nav-item:nth-child(2){
-    margin: 0 45px 0 55px;
+    margin: 0 45px;
+}
+
+.block{
+    visibility: hidden;
+    width: 120px;
+    height: 40px;
+    background-color: none;
+    position: relative;
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 45px;
+    background-color: black;
+    transform: rotate(45deg);
 }
 
 .nav-list{
-    display: none;
+    visibility: hidden;
     background-color: black;
     position: absolute;
-    margin-top: 25px;
-    right: 200px;
+    right: 267px;
+    top: 80px;
+    padding: 10px 0;
 }
 
 .nav-item-list{
     display: block;
+    
     width: 120px;
-    height: 20px;
-    padding: 10px 15px;
+    height: 21px;
+    padding: 8px 20px;
+    font-family: ralewaylight, sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 19px;
 }
 
+.nav-item:hover .block,
 .nav-item:hover .nav-list{
-    display: block;
+    visibility: visible;
 }
 
 /* CONTENT */
