@@ -157,6 +157,7 @@ header span>span{
     height: 40px;
     background-color: none;
     position: relative;
+    z-index: 100;
 }
 
 .square{
@@ -176,11 +177,11 @@ header span>span{
     right: 267px;
     top: 80px;
     padding: 10px 0;
+    z-index: 1000;
 }
 
 .nav-item-list{
     display: block;
-    
     width: 120px;
     height: 21px;
     padding: 8px 20px;
@@ -194,6 +195,10 @@ header span>span{
     visibility: visible;
 }
 
+.nav-item-list:hover .link-decoration {
+    color: #2eb9a0;
+}
+
 /* CONTENT */
 
 main{
@@ -202,10 +207,72 @@ main{
     background-image: url("../images/gradient.png");
     background-position: center;
     background-size: cover;
+    position: relative;
+    font-family: raleway, sans-serif;
 }
 
 main > .container {
     height: 630px;
+}
+
+.slider-btn{
+    font-size: 102px;
+    color: #2eb9a0;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 253px;
+    font-family: ralewaylight, sans-serif;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.next{
+    right: 90px;
+    text-align: right;
+}
+
+.slide1 > img{
+    transform: scale(1.65);
+    position: absolute;
+    top: 174px;
+    left: 170px;
+}
+
+.content{
+    height: 350px;
+    width: 550px;
+    position: absolute;
+    top: 155px;
+    right: 265px;
+    text-align: center;
+}
+
+.slide1 h1{
+    font-size: 51px;
+    font-family: raleway;
+}
+
+.slide1 span{
+    font-family: ralewaybold;
+    color: #2eb9a0;
+}
+
+.slide1 p{
+    font-family: ralewaymedium;
+    font-size: 19px;
+    line-height: 28px;
+    margin: 35px 0;
+}
+
+.btn{
+    background-color: #2eb9a0;
+    padding: 15px 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
 }
 
 /* GALLERY */
@@ -265,7 +332,7 @@ main > .container {
     margin: 0 0 30px 0;
 }
 
-article p{
+.small-box p{
     margin: 25px 0;
     line-height: 26px;
     font-size: 18px;
