@@ -474,28 +474,28 @@ input{
     border: 2px solid #a1e6d1;
 }
 
-input[name="message"]{
+textarea{
+    width: 782px;
     height: 180px;
+    resize: none;
+    border: 2px solid #a1e6d1;
+    padding: 30px 18px;
+    font-size: 40px;
+    font-family: ralewaylight;
 }
-
 
 ::-webkit-input-placeholder { /* Chrome */
   color: #d7d7d7;
 }
 
-input[name="message"]::-webkit-input-placeholder{
-    padding: 0 18px 50px 18px;
-}
-
-
 input[type="button"]{
-    width: 432px;
+    width: 436px;
     height: 90px;
     background-color: #24ba9f;
     border-radius: 10px;
     position: absolute;
-    right: -502px;
-    bottom: 0;
+    right: -500px;
+    bottom: -35px;
     font-size: 45px;
     font-family: ralewaybold;
     color: white;
@@ -549,11 +549,11 @@ input[type="button"]{
 footer{
     height: 100px;
     width: 100%;
-    font-family: ralewaysemibold;
-    color: #c2c2c2;
+    font-family: ralewaymedium;
+    color: #999999;
     font-size: 21px;
     letter-spacing: 0.5px;
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 footer li{
@@ -567,13 +567,18 @@ footer li{
     text-align: right;
 }
 
+.copy{
+    transform: translateY(12px);
+}
+
 footer .logo{
-    color: #c2c2c2;
+    color: #999999;
     font-size: 26px;
     font-size: ralewaybold;
-    transform: translateY(-15px);
-    letter-spacing: 0;
+    transform: translateY(-13px);
+    letter-spacing: 0.5px;
 }
 
 footer span>span{
     font-family: ralewayextrabold;
+}
