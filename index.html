@@ -1,47 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html>
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
     <title>Sit on Chair.</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" >
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" >
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <div class="logo box-left">
-                <span>SIT <span>ON</span> CHAIR</span>
-            </div>
-
-    <!-- MENU -->
-            <ul class="nav box-right">
-                <li class="nav-item"><a href="#" class="link-decoration">O FIRMIE</a>
-                    <div class="block">
-                        <div class="square"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item-list"><a href="#" class="link-decoration">Aktualności</a></li>
-                        <li class="nav-item-list"><a href="#" class="link-decoration">Nasz team</a></li>
-                        <li class="nav-item-list"><a href="#" class="link-decoration">Historia</a></li>
+    <header class="container">
+        <div class="logo">
+            <span>SIT <span>ON</span> CHAIR</span>
+        </div>
+        <nav>
+            <div class="hamburger"></div>
+            <ul>
+                <li class="nav-item">
+                    <a href='#' class='link-decoration'>O FIRMIE</a>
+                    <ul class="nav-inner-list">
+                        <div class="block">
+                            <div class="square"></div>
+                        </div>
+                        <li class="nav-inner-item"><a href='#' class='list-decoration'>Aktualności</a></li>
+                        <li class="nav-inner-item"><a href='#' class='list-decoration'>Nasz team</a></li>
+                        <li class="nav-inner-item"><a href='#' class='list-decoration'>Historia</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="link-decoration">GALERIA</a></li>
-                <li class="nav-item"><a href="#" class="link-decoration">KONTAKT</a></li>
+                <li class="nav-item"><a href='#' class='link-decoration'>GALERIA</a></li>
+                <li class="nav-item"><a href='#' class='link-decoration'>KONTAKT</a></li>
             </ul>
-
-        </div>
+        </nav>
     </header>
-
-    <main>
-        <section class="container">
-            <!-- <p> tu będzie slider </p> -->
-
-            <div class="previous slider-btn">&lt;</div>
-            <div class="next slider-btn">&gt;</div>
-
-            <article class="slide1">
-                <img src="images/black_chair.png" alt="black chair">
+    <section class="container slider">
+        <ul>
+            <li class="slide-1">
+                <div class="slide-1-image"></div>
+                <!-- <img src="images/black_chair.png" alt="black chair"> -->
                 <div class="content">
                     <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
                     <p>
@@ -51,149 +45,249 @@
                     </p>
                     <a href="#" class="btn link-decoration"> ZOBACZ WIĘCEJ </a>
                 </div>
-            </article>
+            </li>
 
-        </section>
-    </main>
+            <li class="slide-2">
+                <div class="slide-2-image"></div>
+                <!-- <img src="images/red_chair.png" alt="red chair"> -->
+                <div class="content">
+                    <h1>OUR <span>CHAIRS</span> ARE <span>THE BEST</span></h1>
+                    <p>
+                        Sweet cake tart chupa chups danish. Chocolate wafer biscuit. Dessert chupa
+                        chups marzipan donut cheesecake apple pie. Jelly brownie pastry brownie sesame
+                        snaps. Toffee soufflé marshmallow lollipop tart macaroon gingerbread. Muffin
+                        pie lemon drops tart pie cheesecake.
+                    </p>
+                    <a href="#" class="btn link-decoration"> ZOBACZ WIĘCEJ </a>
+            </li>
 
-    <!-- GALLERY -->
-    <section class="gallery">
-        <div class="container">
-            <div class="small-box box-left">
-                <div class="stripe">
-                    <h2>Chair CLAIR</h2>
-                    <div class="line"></div>
+            <li class="slide-3">
+                <div class="slide-3-image"></div>
+                <!-- <img src="images/black_fancy_chair.png" alt="black fancy chair"> -->
+                <div class="content">
+                    <a href="#" class="btn link-decoration"> ZOBACZ WIĘCEJ </a>
                 </div>
+            </li>
+        </ul>
+
+        <div id="previous" class="previous slider-btn">&lt</div>
+        <div class="slider-navigation">
+            <span class="circle-nav active-slide"></span>
+            <span class="circle-nav"></span>
+            <span class="circle-nav"></span>
+        </div>
+        <div id="next" class="next slider-btn">&gt</div>
+    </section>
+    <section class="gallery container">
+        <div class="small-box">
+            <div class="stripe">
+                <h2>Chair CLAIR</h2>
+                <div class="line"></div>
             </div>
-            <div class="small-box box-left">
-                <div class="stripe">
-                    <h2>Chair MARGARITA</h2>
-                    <div class="line"></div>
+        </div>
+        <div class="small-box">
+            <div class="stripe">
+                <h2>Chair MARGARITA</h2>
+                <div class="line"></div>
+            </div>
+        </div>
+        <article class="small-box">
+            <h2>Lorem ipsum</h2>
+            <span class="line"></span>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id
+                natus sint, provident sunt inventore? Labore provident nemo ut inventore atque.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id.
+            </p>
+        </article>
+    </section>
+    <section class="container price-list">
+        <div class="title">
+            <h1>CENNIK</h1>
+            <div class="big-line"></div>
+        </div>
+        <div class="offer-slider">
+            <div id="previousOffer" class="previous-offer slider-btn">&lt;</div>
+            <div id="nextOffer" class="next-offer slider-btn">&gt;</div>
+        </div>
+        <!-- PRICE BOARDS -->
+        <div class="price-board">
+            <div class="top-circle">
+                <div class="inner-circle"></div>
+            </div>
+            <p> BASIC PLAN </p>
+            <div class="price">
+                <span class="num1">85</span>
+                <span class="num2">99</span>
+                <span class="peroid">PLN/MSC</span>
+            </div>
+            <ul class="offer">
+                <li>Zakupy towaru + dowóz</li>
+                <li>Serwis</li>
+            </ul>
+            <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
+        </div>
+
+        <!-- PRICE BOARD 2 -->
+        <div class="price-board  active">
+            <div class="top-circle">
+                <div class="inner-circle"></div>
+            </div>
+            <p> STANDARD PLAN </p>
+            <div class="price">
+                <span class="num1">95</span>
+                <span class="num2">99</span>
+                <span class="peroid">PLN/MSC</span>
+            </div>
+            <ul class="offer">
+                <li>Zakupy towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 5 lat</li>
+            </ul>
+            <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
+        </div>
+
+        <!-- PRICE BOARD 3 -->
+        <div class="price-board">
+            <div class="top-circle">
+                <div class="inner-circle"></div>
+            </div>
+            <p> ADVANCE PLAN </p>
+            <div class="price">
+                <span class="num1">211</span>
+                <span class="num2">00</span>
+                <span class="peroid">PLN/MSC</span>
+            </div>
+            <ul class="offer">
+                <li>Zakupy towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 6 lat</li>
+                <li>Porady projektanta</li>
+            </ul>
+            <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
+        </div>
+
+    </section>
+
+
+<!-- APLIKACJA OD CODERSLAB -->
+    <section class="application container">
+        <div class="main_width">
+            <section class="choice_part inline">
+                <div>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                <div>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox-app check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
                 </div>
-            </div>
-            <article class="small-box box-left">
-                <h2>Lorem ipsum</h2>
-                <span class="line"></span>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id
-                    natus sint, provident sunt inventore? Labore provident nemo ut inventore atque.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo non illo quidem id.
-                </p>
-            </article>
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <div class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </div>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
         </div>
     </section>
 
-    <!-- PRICE LIST -->
-    <section class="price-list">
-        <div class="container">
-            <div class="title">
-                <h1>CENNIK</h1>
-                <div class="big-line"></div>
-            </div>
-
-    <!-- PRICE BOARDS -->
-            <div class="price-board box-left">
-                <div class="top-circle">
-                    <div class="inner-circle"></div>
-                </div>
-                <p> BASIC PLAN </p>
-                <div class="price">
-                    <span class="num1">85</span>
-                    <span class="num2">99</span>
-                    <span class="peroid">PLN/MSC</span>
-                </div>
-                <ul class="offer">
-                    <li>Zakupy towaru + dowóz</li>
-                    <li>Serwis</li>
-                </ul>
-                <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
-            </div>
-
-            <div class="price-board box-left active">
-                <div class="top-circle">
-                    <div class="inner-circle"></div>
-                </div>
-                <p> STANDARD PLAN </p>
-                <div class="price">
-                    <span class="num1">95</span>
-                    <span class="num2">99</span>
-                    <span class="peroid">PLN/MSC</span>
-                </div>
-                <ul class="offer">
-                    <li>Zakupy towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 5 lat</li>
-                </ul>
-                <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
-            </div>
-
-            <div class="price-board box-left">
-                <div class="top-circle">
-                    <div class="inner-circle"></div>
-                </div>
-                <p> ADVANCE PLAN </p>
-                <div class="price">
-                    <span class="num1">211</span>
-                    <span class="num2">00</span>
-                    <span class="peroid">PLN/MSC</span>
-                </div>
-                <ul class="offer">
-                    <li>Zakupy towaru + dowóz</li>
-                    <li>Serwis</li>
-                    <li>Gwarancja 6 lat</li>
-                    <li>Porady projektanta</li>
-                </ul>
-                <a href="#" class="lil-btn link-decoration"><span>DOŁĄCZ</span></a>
-            </div>
-
+    <section class="contact container">
+        <div class="title">
+            <h1>KONTAKT</h1>
+            <div class="big-line"></div>
         </div>
-    </section>
 
-    <!-- FORM -->
-    <section class="contact">
-        <div class="container">
-            <div class="title">
-                <h1>KONTAKT</h1>
-                <div class="big-line"></div>
-            </div>
+        <form>
+            <input type="text" name="name" placeholder="Imię">
+            <input type="text" name="email" placeholder="email">
+            <textarea name="message" placeholder="Wiadomość"></textarea>
+            <input type="button" value="WYŚLIJ">
+        </form>
 
-            <form>
-                <input type="text" name="name" placeholder="Imię">
-                <input type="text" name="email" placeholder="email">
-                <textarea name="message" placeholder="Wiadomość"></textarea>
-                <input type="button" value="WYŚLIJ">
-            </form>
-            <div class="form-images box-right">
-                <img src="images/red_chair.png" alt="Red chair" class="red-chair">
-                <div class="checkbox">
-                    <img src="images/form_ok.jpg" alt="checkbox" class="checkbox-img box-left">
-                    <p class="box-left"> Zgadzam się na przetwarzanie danych osobowych </p>
-                </div>
+        <div class="form-images">
+            <img src="images/red_chair.png" alt="Red chair" class="red-chair">
+            <div class="checkbox">
+                <div class="checkbox-img"></div>
+                <p> Zgadzam się na przetwarzanie danych osobowych </p>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <section class="container">
-            <div class="copy box-left">
-                <p>Copyright 2017 | All Rights Reserved. - Sit On Chair</p>
-            </div>
-            <div class="mini-box box-right logo">
-                <span>SIT <span>ON</span> CHAIR</span>
-            </div>
-            <div class="mini-box box-right">
-                <ul>
-                    <li><a href="https://www.flickr.com/"><img src="images/flickr.png" alt="flickr"></a></li>
-                    <li><a href="https://vimeo.com/"><img src="images/vimeo.png" alt="vimeo"></a></li>
-                    <li><a href="https://pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a></li>
-                    <li><a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a></li>
-                </ul>
-            </div>
+    <footer class="container">
+        <div class="copy">
+            <p>Copyright 2017 | All Rights Reserved. - Sit On Chair</p>
+        </div>
 
-        </section>
+        <div class="mini-box">
+            <ul>
+                <li><a href="https://www.flickr.com/"><img src="images/flickr.png" alt="flickr"></a></li>
+                <li><a href="https://vimeo.com/"><img src="images/vimeo.png" alt="vimeo"></a></li>
+                <li><a href="https://pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a></li>
+                <li><a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a></li>
+            </ul>
+        </div>
+
+        <div class="mini-box logo">
+            <span>SIT <span>ON</span> CHAIR</span>
+        </div>
     </footer>
 </body>
+<script src="js/app.js" type="text/javascript"></script>
 </html>

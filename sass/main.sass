@@ -1,0 +1,1030 @@
+@font-face
+    font-family: 'raleway'
+    src: url('../fonts/raleway-regular.woff2') format('woff2'), url('../fonts/raleway-regular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewaybold'
+    src: url('../fonts/raleway-bold.woff2') format('woff2'), url('../fonts/raleway-bold.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewaylight'
+    src: url('../fonts/raleway-light.woff2') format('woff2'), url('../fonts/raleway-light.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewaymedium'
+    src: url('../fonts/raleway-medium.woff2') format('woff2'), url('../fonts/raleway-medium.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewaysemibold'
+    src: url('../fonts/raleway-semibold.woff2') format('woff2'), url('../fonts/raleway-semibold.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewayextrabold'
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'), url('../fonts/raleway-extrabold.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'ralewayblack'
+    src: url('../fonts/raleway-black.woff2') format('woff2'), url('../fonts/raleway-black.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+=ph($color)
+    &::-webkit-input-placeholder
+        color: $color
+    &::-moz-placeholder
+        color: $color
+    &:-ms-input-placeholder
+        color: $color
+    &:-moz-placeholder
+        color: $color
+
+//GENERAL
+
+*
+    margin: 0
+    padding: 0
+
+.container
+    display: flex
+    box-sizing: border-box
+    margin: 0 auto
+    width: 100vw
+
+.link-decoration
+    text-decoration: none
+    color: white
+
+.title
+    font-size: 1rem
+    color: #5C5C5C
+    letter-spacing: 0.5px
+    font-family: raleway, sans-serif
+    position: relative
+
+.big-line
+    height: 7px
+    width: 45vw
+    background-color: #2eb9a0
+    position: absolute
+    top: 30px
+
+// HEADER
+
+header
+    width: 100vw
+    height: 10vh
+    background-color: black
+    justify-content: space-between
+    align-items: center
+
+.logo
+    color: white
+    margin-left: 4vw
+    font-size: 1.75rem
+    font-family: ralewaymedium, sans-serif
+    letter-spacing: 2px
+    span
+        span
+            color: #2eb9a0
+            font-size: 1.8rem
+            font-family: ralewayextrabold, sans-serif
+
+.hamburger
+    width: 30px
+    height: 18px
+    border-top: 4px solid white
+    border-bottom: 4px solid white
+    background-color: transparent
+    position: relative
+    margin-right: 5vw
+    &::after
+        content: ''
+        position: absolute
+        top: 7px
+        left: 0
+        width: 100%
+        border-top: 4px solid white
+
+.nav-item
+    display: none
+    font-family: ralewaysemibold, sans-serif
+
+.nav-inner-list
+    display: none
+
+.block
+    display: none
+
+// SLIDER
+.slider
+    width: 100vw
+    height: 90vh
+    flex-wrap: wrap
+    background-image: url("../images/gradient.png")
+    background-size: cover
+    ul
+        li
+            display: none
+            .btn
+                background-color: #2eb9a0
+                padding: 15px 50px
+                font-size: 1.2rem
+                border-radius: 10px
+                margin-top: 3vh
+                align-self: flex-end
+                font-family: ralewaylight, sans-serif
+            .content
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                text-align: center
+                h1
+                    font-family: raleway
+                    margin: 2vh
+                    font-size: 1.8rem
+                    span
+                        font-family: ralewaybold
+                        color: #2eb9a0
+                p
+                    width: 85vw
+                    margin: 0 auto
+                    font-family: ralewaymedium
+                    line-height: 24px
+    .slider-navigation
+        align-self: flex-end
+        height: 5vh
+        width: 60vw
+        margin: 0 auto
+        display: flex
+        justify-content: space-around
+        .circle-nav
+            border: 2px solid black
+            border-radius: 50%
+            width: 10px
+            height: 10px
+            cursor: pointer
+        .active-slide
+            background-color: #2eb9a0
+    .visible
+        display: flex
+
+.slider-btn
+    align-self: flex-end
+    font-size: 2rem
+    font-family: ralewaybold, sans-serif
+    color: #2eb9a0
+    cursor: pointer
+    z-index: 10
+    margin-bottom: 1.5vh
+#next
+    margin-right: 10vw
+#previous
+    margin-left: 10vw
+
+.slide-1
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .slide-1-image
+        background-image: url('../images/black_chair.png')
+        background-repeat: no-repeat
+        background-position: center
+        width: 100vw
+        height: 45vh
+        margin-bottom: -1.5rem
+
+.slide-2
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .slide-2-image
+        background-image: url('../images/red_chair.png')
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        width: 100vw
+        height: 35vh
+
+.slide-3
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .slide-3-image
+        background-image: url('../images/black_fancy_chair.png')
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        width: 100vw
+        height: 70vh
+
+// GALLERY
+
+.gallery
+    min-height: 100vh
+    flex-wrap: wrap
+    justify-content: center
+    padding: 1.5rem
+    .small-box
+        width: 75vw
+        height: 33vh
+        border: 1px solid #c2c2c2
+        background-size: cover
+        position: relative
+        letter-spacing: -0.5px
+        box-sizing: border-box
+        .stripe
+            background-color: rgba(255,255,255,0.4)
+            position: absolute
+            width: 100%
+            height: 30%
+            bottom: 5%
+            .line
+                position: absolute
+                top: 50%
+                height: 5px
+                width: 40%
+                background-color: #28c7aa
+                margin-left: 18px
+            h2
+                position: absolute
+                top: 15%
+                left: 19px
+                font-size: 1.2rem
+                font-family: ralewaybold, sans-serif
+    .small-box:first-child
+        background-image: url("../images/box1_img.jpg")
+    .small-box:nth-child(2)
+        background-image: url("../images/box2_img.jpg")
+        margin: 0.7rem 0
+        .line
+            width: 50%
+    .small-box:nth-child(3)
+        display: flex
+        flex-wrap: wrap
+        font-family: raleway, sans-serif
+        padding: 0.5rem
+        height: 35vh
+        .line
+            position: absolute
+            top: 16%
+            height: 5px
+            width: 45%
+            background-color: #28c7aa
+        h2
+            font-size: 1.3rem
+            font-family: ralewaybold, sans-serif
+
+// PRICE BOARDS
+
+.price-list
+    min-height: 110vh
+    width: 100vw
+    padding: 5px
+    background-color: #f1f1f1
+    justify-content: center
+    align-items: center
+    .title
+        align-self: flex-start
+        position: relative
+    .offer-slider
+        width: 50vw
+        display: flex
+        justify-content: space-between
+        position: relative
+        top: -260px
+        left: -9vw
+    .price-board
+        display: block
+        margin-top: 35px
+        height: 550px
+        width: 330px
+        background-color: #f9f9f9
+        border: 3px solid #d5d5d5
+        border-radius: 4px
+        font-family: raleway, sans-serif
+        position: absolute
+        .top-circle
+            height: 70px
+            width: 70px
+            border-radius: 50%
+            border: 3px solid #d5d5d5
+            background-color: #f9f9f9
+            position: absolute
+            top: -52px
+            left: 41.5%
+            text-align: center
+            .inner-circle
+                width: 50%
+                height: 50%
+                border-radius: 50%
+                margin: auto
+                background-color: #c2c2c2
+                position: absolute
+                top: 25%
+                left: 25%
+        >p
+            color: #27c7ab
+            font-size: 2rem
+            text-align: center
+            margin: 35px 0 30px 0
+            letter-spacing: -1.5px
+            font-family: 'Open Sans', sans-serif
+        .price
+            width: 170px
+            height: 170px
+            border-radius: 50%
+            background-color: white
+            border: 3px solid #d5d5d5
+            position: absolute
+            left: 27%
+            color: #c2c2c2
+            font-family: ralewaybold, sans-serif
+            > .num1
+                position: absolute
+                top: 35px
+                left: 46px
+                font-size: 58px
+            > .num2
+                position: absolute
+                right: 37px
+                top: 40px
+                font-size: 18px
+            > .peroid
+                position: absolute
+                bottom: 24%
+                left: 23%
+                font-family: ralewaysemibold, sans-serif
+                font-size: 20px
+        .offer
+            width: 100%
+            position: absolute
+            top: 320px
+            background-color: #f1f1f1
+            color: gray
+            ul
+                position: absolute
+                top: -100px
+            li
+                display: block
+                padding: 5px
+                text-align: center
+                font-size: 1.5rem
+                &:nth-child(2n+1)
+                    background-color: #e4e4e4
+        .lil-btn
+            width: 155px
+            height: 42px
+            border-radius: 10px
+            position: absolute
+            bottom: 25px
+            left: 28%
+            background-color: #27c7ab
+            border: 2px solid #27c7ab
+            > span
+                font-size: 20px
+                padding: 8px
+                position: absolute
+                left: 29px
+
+    .price-board:nth-child(5)
+        display: none
+    .price-board:nth-child(4)
+        display: none
+
+//APLIKACJA
+
+.application
+    display: none
+
+
+// CONTACT
+.contact
+    height: 100vh
+    width: 100vw
+    justify-content: center
+    flex-wrap: wrap
+    padding: 5px
+    .title
+        left: -28vw
+    form
+        position: relative
+        top: -50px
+        input,
+        textarea
+            +ph(#d7d7d7)
+            font-size: 1rem
+            font-family: ralewaylight, sans-serif
+            display: block
+            width: 80vw
+            height: 5vh
+            margin: 37px 0
+            padding: 10px 5px
+            border: 2px solid #a1e6d1
+        textarea
+            width: 80vw
+            height: 150px
+            resize: none
+        input[type="button"]
+            width: 83vw
+            height: 80px
+            background-color: #24ba9f
+            border-radius: 10px
+            position: absolute
+            font-size: 2rem
+            font-family: ralewaybold, sans-serif
+            color: white
+            cursor: pointer
+            padding: 18px
+            bottom: -150px
+    .form-images
+        .red-chair
+            display: none
+        .checkbox
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: relative
+            width: 80vw
+            top: -90px
+            .checkbox-img
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                width: 45px
+                height: 40px
+                margin-right: 25px
+                border: 1px solid #24ba9f
+                padding: 5px
+                cursor: pointer
+            p
+                width: 65vw
+                font-size: 1rem
+                font-family: raleway, sans-serif
+
+.check
+    background-image: url('../images/form_ok.jpg')
+
+// FOOTER
+footer
+    height: 150px
+    width: 100vw
+    justify-content: center
+    flex-wrap: wrap
+    font-family: ralewaymedium, sans-serif
+    color: #999999
+    font-size: 0.7rem
+    letter-spacing: 0.5px
+    margin-top: 65px
+    .logo
+        color: #999999
+        font-size: 1.5rem
+        font-size: ralewaybold, sans-serif
+        letter-spacing: 0.5px
+        margin-left: 0
+        span>span
+            font-family: ralewayextrabold, sans-serif
+            font-size: 1.5rem
+    .mini-box
+        display: flex
+        justify-content: center
+        width: 100vw
+        li
+            display: inline-block
+            transform: scale(1.28)
+            margin: 0 15px
+    .copy
+        transform: translateY(12px)
+        margin-bottom: 10px
+
+@media (min-width: 426px) and (max-width: 768px)
+    header
+        height: 7vh
+    .title
+        width: 35vw
+    .slider
+        height: 93vh
+        .slide-1-image
+            height: 55vh
+            background-size: contain
+        .slide-2-image
+            height: 45vh
+    .gallery
+        .small-box
+            width: 65vw
+            height: 45vh
+            .stripe
+                .line
+                    height: 7px
+                h2
+                    font-size: 1.5rem
+        .small-box:nth-child(2)
+            .line
+                width: 43%
+        .small-box:nth-child(3)
+            height: 45vh
+            .line
+                height: 7px
+            h2
+                font-size: 1.5rem
+            p
+                line-height: 1.4rem
+                font-size: 1.1rem
+    .price-list
+        min-height: 120vh
+        .title
+            left: -28vw
+        .price-board
+            width: 350px
+            height: 580px
+        .offer-slider
+            width: 80vw
+            position: absolute
+            top: initial
+            left: initial
+            div
+                font-size: 5rem
+
+@media (min-width: 769px)
+    .container
+        padding: 0 6vw
+    header
+        height: 47px
+        .nav-item
+            display: block
+        .logo
+            font-size: 1rem
+            margin-left: 0
+            span>span
+                font-size: 1rem
+        .hamburger
+            display: none
+        .nav-item
+            font-size: 1rem
+            display: inline-block
+            letter-spacing: 2px
+            .nav-inner-list
+                display: none
+                width: 120px
+                height: 110px
+                padding: 8px 20px
+                background-color: black
+                font-family: ralewaylight, sans-serif
+                letter-spacing: 1.1px
+                font-size: 1.1rem
+                z-index: 1000
+                position: absolute
+                top: 60px
+                right: 23vw
+                .nav-inner-item
+                    padding: 7px
+                    display: block
+                    a
+                        text-decoration: none
+                        color: white
+                .block
+                    display: block
+                    width: 160px
+                    height: 40px
+                    position: absolute
+                    top: -30px
+                    .square
+                        background-color: black
+                        width: 20px
+                        height: 20px
+                        transform: rotate(45deg)
+                        position: absolute
+                        bottom: 0
+                        left: 30%
+            .list-show
+                display: block
+        .nav-item:nth-child(2)
+            margin: 0 45px
+
+    //SLIDER
+    .slider
+        padding-top: 70px
+        height: 80vh
+        min-height: 80vh
+        .slider-navigation
+            display: none
+        .slider-btn
+            align-self: center
+            z-index: 100
+            position: absolute
+            top: 36vh
+            font-size: 100px
+            font-family: ralewaylight, sans-serif
+        #next
+            right: 0
+            margin-right: 4.5vw
+        #previous
+            left: 0
+            margin-left: 6vw
+        ul li .content
+            width: 40vw
+            height: 40vh
+            h1
+                width: 35vw
+                font-size: 2.9rem
+            p
+                width: 40vw
+                font-size: 1.1rem
+                line-height: 28px
+            .btn
+                font-size: 1.8rem
+        .slide-1
+            flex-wrap: nowrap
+            justify-content: space-around
+            .slide-1-image
+                background-size: 125%
+                align-self: center
+                width: 40vw
+                height: 65vh
+            .content
+                margin-top: -30px
+                align-self: center
+        .slide-2
+            flex-wrap: nowrap
+            justify-content: space-around
+            padding-top: 40px
+            .slide-2-image
+                background-size: contain
+                align-self: center
+                width: 40vw
+                height: 45vh
+                margin-left: 25px
+            .content
+                margin-top: -30px
+                align-self: center
+        .slide-3
+            flex-wrap: nowrap
+            justify-content: space-around
+            .slide-3-image
+                background-size: contain
+                align-self: center
+                width: 40vw
+                height: 60vh
+                margin-left: 6vw
+            .content
+                .btn
+                    align-self: center
+                    margin-right: 10vw
+                    font-size: 3rem
+    // GALLERY
+    .gallery
+        flex-wrap: nowrap
+        justify-content: space-around
+        min-height: 50vh
+        padding-top: 35px
+        .small-box
+            width: 30vw
+            height: 32vh
+            .stripe
+                .line
+                    height: 7px
+        .small-box:nth-child(2)
+            margin: 0 2rem
+        .small-box:nth-child(3)
+            width: 32vw
+            min-height: 32vh
+            padding: 1.4rem
+            .line
+                height: 7px
+                top: 18%
+            @media (min-width: 1120px)
+                p
+                    line-height: 1.5rem
+                h2
+                    margin: 10px 0
+                .line
+                    top: 22%
+
+    //PRICE BOARDS
+    .price-list
+        padding: 6vh 6vw
+        justify-content: space-between
+        .title
+            position: absolute
+            left: 6vw
+            .big-line
+                width: 27vw
+                height: 10px
+        .offer-slider
+            display: none
+        .price-board
+            height: 580px
+            position: relative
+            margin-top: 100px
+            right: inherit
+            @media (min-width: 1120px)
+                width: 27vw
+        .price-board:nth-child(5)
+            display: block
+        .price-board:nth-child(4)
+            display: block
+        .active
+            background-color: #27c7ab
+            border: 3px solid #27c7ab
+            > .top-circle
+                background-color: #27c7ab
+                border: 3px solid #27c7ab
+                .inner-circle
+                    background-color: white
+            p
+                color: white
+            .lil-btn,
+            .price
+                background-color: white
+                border: 2px solid white
+                color:#27c7ab
+                >span
+                    color: #27c7ab
+                    font-family: ralewaysemibold, sans-serif
+            .offer
+                background-color: #f1f1f1
+                li:nth-child(2n+1)
+                    background-color: #ffffff
+
+
+    //APLIKACJA
+    .application
+        background-color: #f9f9f9
+        padding: 30px 6vw
+        display: flex
+        margin: 0 auto
+        flex-wrap: nowrap
+        justify-content: center
+        .main_width
+            max-width: 70vw
+            margin: 0 auto
+        h3
+            color: #575757
+            font-size: 18px
+        .align_right
+            text-align: right
+            background-color: none
+        .title
+            height: 30px
+
+    .inline
+      display: inline-block
+      width: 300px
+      padding: 14px
+      vertical-align: top
+
+    .form
+      margin-top: 50px
+
+    .drop_down_list
+      border: 1px solid #8de0d2
+      width: 280px
+      height: 38px
+      background-color: white
+      margin-top: 22px
+      padding: 8px 12px
+      position: relative
+
+
+    .list_label
+      font-size: 30px
+      color: #e2e2e2
+      font-family: 'ralewaylight', Arial, Tahoma, sans-serif
+
+    .checkbox-app
+        position: relative
+        padding: 30px 30px 30px 0
+        input
+            display: block
+            opacity: 0
+            height: 48px
+            position: absolute
+            width: 48px
+            cursor: pointer
+        label
+            display: block
+            padding-left: 65px
+            position: relative
+            font-size: 28px
+            color: #cecece
+            line-height: 120%
+            padding-top: 10px
+            cursor: pointer
+            &::before,
+            &::after
+                border: 1px solid #27c7ab
+                content: ""
+                display: block
+                left: 0
+                height: 48px
+                position: absolute
+                width: 48px
+                top: 0
+            &::after
+                background: url("data:image/svg+xmlcharset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center
+                border: 0
+                display: none
+        input:checked + label::after
+            display: block
+
+    .active-app
+      background: url('../images/form_ok.jpg')
+      width: 48px
+      height: 40px
+
+    .inline_text
+      display: inline-block
+      width: 228px
+      vertical-align: top
+      margin-top: 30px
+      margin-left: 15px
+      color: #aeaeae
+
+    .image_part img
+      margin-top: 110px
+      margin-left: 38px
+
+    .application .green_bell
+      background-color: #24baa0
+      width: 200px
+      height: 6px
+      display: inline-block
+      margin: 5px 0 5px 0
+
+    .summary_panel
+      background-color: white
+      width: 100%
+      height: 195px
+      padding: 10px
+      margin-top: 50px
+
+    .application .green_button
+      background-color: #27c7ab
+      color: white
+      text-align: center
+      text-transform: uppercase
+      width: 200px
+      padding: 10px 30px
+      font-size: 24px
+      display: inline-block
+      font-family: 'ralewaymedium', Arial, Tahoma, sans-serif
+      margin-top: 20px
+      margin-left: 29px
+      border-radius: 8px
+      text-decoration: none
+
+    .panel_left
+        display: inline-block
+        width: 185px
+        vertical-align: top
+        padding-bottom: 10px
+        border-bottom: 1px solid #e7e7e7
+        height: 135px
+        span
+            margin-top: 10px
+            font-size: 22px
+            color: #5b5a5a
+            display: block
+
+    .panel_right
+        display: inline-block
+        width: 100px
+        border-left: 1px solid #e7e7e7
+        text-align: right
+        vertical-align: top
+        padding-bottom: 10px
+        border-bottom: 1px solid #e7e7e7
+        height: 135px
+        span
+            display: block
+            font-size: 22px
+            color: #24baa0
+            margin-top: 10px
+
+    .panel_left h4 , .panel_right h4
+    color: #24baa0
+    font-size: 23px
+
+    .sum_label
+      display: inline-block
+      width: 185px
+      margin-top: 10px
+      font-size: 22px
+      color: #5b5a5a
+
+    .sum
+      display: inline-block
+      width: 100px
+      text-align: right
+      margin-top: 10px
+      font-size: 22px
+      color: #24baa0
+
+    .list_arrow
+      width: 0
+      height: 0
+      border-left: 15px solid transparent
+      border-right: 15px solid transparent
+      border-top: 15px solid #24baa0
+      display: block
+      position: absolute
+      right: 14px
+      top: 20px
+      cursor: pointer
+
+    .list_panel
+        background-color: white
+        border: 1px solid #ccc
+        width: 288px
+        padding-left: 15px
+        padding-bottom: 10px
+        list-style: none
+        margin: 0
+        left: 0px
+        z-index: 2
+        position: absolute
+        top: 54px
+        display: none
+        li
+            margin-top: 10px
+            cursor: pointer
+            color: #585858
+
+
+
+    //CONTACT
+    .contact.container
+        display: block
+    .contact
+        display: block
+        width: 100vw
+        height: 85vh
+        min-height: 650px
+        padding: 6vh 6vw
+        position: relative
+        .title
+            left: 0
+            height: 40px
+            align-self: flex-start
+            .big-line
+                height: 10px
+                width: 27vw
+        form
+            width: 50vw
+            top: 3vh
+            input,
+            textarea
+                width: 50vw
+                font-size: 2.1rem
+                padding: 1rem
+            input[type="button"]
+                width: 30vw
+                height: 85px
+                right: -37vw
+                bottom: -40px
+                font-size: 2.5rem
+        .form-images
+            width: 30vw
+            position: absolute
+            right: 80px
+            top: 100px
+            .red-chair
+                display: block
+                width: 25vw
+            .checkbox
+                width: 25vw
+                top: 5vh
+                @media (min-width: 1260px)
+                    top: 0vh
+                p
+                    width: 25vw
+                .checkbox-img
+                    width: 60px
+    footer
+        display: flex
+        flex-wrap: nowrap
+        padding: 6vh 6vw
+        justify-content: space-between
+        align-items: center
+        .copy
+            font-size: 1.3rem
+            max-width: 50vw
+            flex-grow: 2
+        .mini-box
+            width: 17vw
+            li
+                margin: 0 5px
+            .logo
+                width: 150px
